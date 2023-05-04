@@ -140,6 +140,16 @@ p {
   margin-bottom: 1rem;
 }
 
+select {
+  background-color: #bda084;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+option {
+  background-color: #bda084;
+}
+
 .rules-pop-up {
   display: none;
   position: absolute;
