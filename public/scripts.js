@@ -39,9 +39,11 @@ function setChoice() {
 function openRules() {
   var pop_up = document.getElementsByClassName("rules-pop-up")[0];
 
-  if(pop_up.style.display == 'inline') {
-    pop_up.style.display == 'none';
-  } else {
-    pop_up.style.display = 'inline';
-  }
+  pop_up.style.display = 'inline';
+}
+
+function closeRules() {
+  var pop_up = document.getElementsByClassName("rules-pop-up")[0];
+
+  pop_up.style.display = 'none';
 }

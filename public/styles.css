@@ -144,10 +144,30 @@ p {
   display: none;
   position: absolute;
   z-index: 1;
-  background-color: white;
-  padding: 1rem;
-  top: 30vh;
+  background-color: #8a6d56;
+  border-radius: 20px;
+  width: 40vw;
+  height: 55vh;
+  padding: 3rem;
+  top: 15vh;
   left: 30vw;
+}
+
+.version {
+  text-align: left;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.close-button {
+  background-color: #b89679;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.close-button:hover {
+  cursor: pointer;
+  background-color: #95775d;
 }
 
 /* The switch - the box around the slider */
