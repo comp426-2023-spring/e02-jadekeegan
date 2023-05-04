@@ -1,9 +1,74 @@
 <html>
     <head>
-        <title>Rock</title>
+        <title>Rock, Paper, Scissors!</title>
         <!-- Link to your script file(s) and CSS in here somewhere -->
+        <script src="./scripts.js"></script>
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
+        <div class="main-page">
+            <h1 class="header">Let's play a game!</h1>
+
+            <div class="game-options">
+                <div class="buttons">
+                    <button class="rps-button" onclick="setToRPS()">Classic RPS</button>
+                    <button class="rpsls-button" onclick="setToRPSLS()">RPSLS</button>
+                </div>
+
+                <div class="game-type-switch">
+                    <label class="switch">
+                        <input type="checkbox" onchange="setChoice()">
+                        <span class="slider"></span>
+                    </label>
+                    <p class="game-type">Against Opponent?</p>
+                </div>
+            </div>
+
+            <!-- Game View -->
+            <div class="game-view">
+                <div class="choice-dropdown">
+                    <label for="choices">Choice:</label>
+
+                    <select name="choices" id="choices">
+                    <option value="rock">Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                    <option value="paper" class="rpsls">Lizard</option>
+                    <option value="scissors" class="rpsls">Spock</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="play-button">Play!</button>
+                    <button class="help-button" onclick="openRules()">?</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rules-pop-up">
+            <div class="rule-set">
+                <p class="version">Rules for Classic Rock Paper Scissors</p>
+                <ul class="info">
+                    <li>Scissors CUTS Paper</li>
+                    <li>Paper COVERS Rock</li>
+                    <li>Rock CRUSHES Scissors</li>
+                </ul>
+            </div>
+            <div>
+                <p class="version">Rules for the Lizard-Spock Expansion of Rock Paper Scissors</p>
+                <ul class="info">
+                    <li>Scissors CUTS Paper</li>
+                    <li>Paper COVERS Rock</li>
+                    <li>Rock SMOOSHES Lizard</li>
+                    <li>Lizard POISONS Spock</li>
+                    <li>Spock SMASHES Scissors</li>
+                    <li>Scissors DECAPITATES Lizard</li>
+                    <li>Lizard EATS Paper</li>
+                    <li>Paper DISPROVES Spock</li>
+                    <li>Spock VAPORIZES Rock</li>
+                    <li>Rock CRUSHES Scissors</li>
+                </ul>
+            </div>
+        </div>
 
     <!-- Your interface markup goes here -->
     <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
