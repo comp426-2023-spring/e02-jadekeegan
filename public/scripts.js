@@ -47,3 +47,7 @@ function closeRules() {
 
   pop_up.style.display = 'none';
 }
+
+function play() {
+  
+}
