@@ -125,6 +125,21 @@ p {
   cursor: pointer;
 }
 
+.reset-button {
+  padding: 0.5rem 1rem;
+  font-size: 1.05em;
+  background-color: #8a6d56;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  margin-right: 1rem;
+}
+
+.reset-button:hover {
+  background-color: #604935;
+  cursor: pointer;
+}
+
 .rpsls {
   display: none;
 }
@@ -150,7 +165,7 @@ option {
   background-color: #bda084;
 }
 
-.rules-pop-up {
+.pop-up {
   display: none;
   position: absolute;
   z-index: 1;
@@ -178,6 +193,28 @@ option {
 .close-button:hover {
   cursor: pointer;
   background-color: #95775d;
+}
+
+.results-pop-up {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #8a6d56;
+  border-radius: 20px;
+  width: 20vw;
+  height: 30vh;
+  padding: 3rem;
+  top: 20vh;
+  left: 35vw;
+}
+
+.results {
+  margin-bottom: 1rem;
+  margin-top: 6vh;
+}
+
+.result-item {
+  margin-bottom: 0.5rem;
 }
 
 /* The switch - the box around the slider */

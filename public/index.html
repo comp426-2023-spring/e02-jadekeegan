@@ -30,21 +30,23 @@
                     <label for="choices">Choice:</label>
 
                     <select name="choices" id="choices">
+                    <option disabled selected value>-- select --</option>
                     <option value="rock">Rock</option>
                     <option value="paper">Paper</option>
                     <option value="scissors">Scissors</option>
-                    <option value="paper" class="rpsls">Lizard</option>
-                    <option value="scissors" class="rpsls">Spock</option>
+                    <option value="lizard" class="rpsls">Lizard</option>
+                    <option value="spock" class="rpsls">Spock</option>
                     </select>
                 </div>
                 <div>
                     <button class="play-button" onclick="play()">Play!</button>
+                    <button class="reset-button" onclick="reset()">Reset</button>
                     <button class="help-button" onclick="openRules()">?</button>
                 </div>
             </div>
         </div>
 
-        <div class="rules-pop-up">
+        <div class="pop-up">
             <div class="rule-set">
                 <p class="version">Rules for Classic Rock Paper Scissors</p>
                 <ul class="info">
@@ -71,6 +73,14 @@
             <button class="close-button" onclick="closeRules()">Close Rules</button>
         </div>
 
+        <div class="results-pop-up">
+            <div class="results">
+                <p id="player" class="result-item"></p>
+                <p id="opponent" class="result-item"></p>
+                <p id="result" class="result-item"></p>
+            </div>
+            <button class="close-button" onclick="closeResults()">Close Results</button>
+        </div>
     <!-- Your interface markup goes here -->
     <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
 
