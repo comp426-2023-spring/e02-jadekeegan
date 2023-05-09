@@ -12,8 +12,8 @@
 
             <div class="game-options">
                 <div class="buttons">
-                    <button class="rps-button" onclick="setToRPS()">Classic RPS</button>
-                    <button class="rpsls-button" onclick="setToRPSLS()">RPSLS</button>
+                    <button type="submit" class="rps-button" onclick="setToRPS()">Classic RPS</button>
+                    <button type="submit" class="rpsls-button" onclick="setToRPSLS()">RPSLS</button>
                 </div>
 
                 <div class="game-type-switch">
@@ -40,9 +40,9 @@
                     </select>
                 </div>
                 <div>
-                    <button class="play-button" onclick="play()">Play!</button>
-                    <button class="reset-button" onclick="reset()">Reset</button>
-                    <button class="help-button" onclick="openRules()">?</button>
+                    <button type="submit" class="play-button" onclick="play()">Play!</button>
+                    <button type="submit" class="reset-button" onclick="reset()">Reset</button>
+                    <button type="submit" class="help-button" onclick="openRules()">?</button>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
                     <li>Rock CRUSHES Scissors</li>
                 </ul>
             </div>
-            <button class="close-button" onclick="closeRules()">Close Rules</button>
+            <button type="submit" class="close-button" onclick="closeRules()">Close Rules</button>
         </div>
 
         <div class="results-pop-up">
@@ -80,7 +80,7 @@
                 <p id="opponent" class="result-item"></p>
                 <p id="result" class="result-item"></p>
             </div>
-            <button class="close-button" onclick="closeResults()">Close Results</button>
+            <button type="submit" class="close-button" onclick="closeResults()">Close Results</button>
         </div>
     <!-- Your interface markup goes here -->
     <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
